@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.processNextEventInCurrentThread
 import org.w3c.dom.Text
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
     var tipode = 0
     var num1: Double = 0.0
     var num2: Double = 0.0
@@ -30,6 +30,12 @@ class MainActivity : AppCompatActivity() {
         resultado = findViewById<TextView>(R.id.resultado)
         var igual = findViewById<Button>(R.id.igual)
         var clear = findViewById<Button>(R.id.clear)
+        if (savedInstanceState != null){
+            resultado.setText(savedInstanceState.getString("resultado",""))
+        }
+        /* Un if para que al voltear la pantalla no se pierda datos si tenia al voltear
+         pongo el textview resultado con la instancia guardada llamada resultado*/
+
         clear.setOnClickListener {
             resultado.setText("")
             tipode = 0
@@ -70,7 +76,12 @@ class MainActivity : AppCompatActivity() {
     respuesta nuestra variable resultado, en el caso de la resta se le multiplica por un negativo porque
     sino daría una la suma porque negativo por negativo es más
      */
-
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putString("resultado", resultado.text.toString())
+        super.onSaveInstanceState(outState)
+    }
+/* Funcion para guardar datos si se pusieron en el textview resultado al girar el celular se llama resultado
+ para evitar confución y lo transormo a texto y luego string para guardarlo correctamente*/
     fun presionarnum(view: View) {
         var numshow = resultado.text.toString()
         when (view.id) {
@@ -109,7 +120,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    
+
     /*La función presionarnum sirve que al presionar un número en el teclado este aparesca en la pantalla
     y con la variable numshow vamos guardando los números para que cuando toquemos otro no desaparezca el anterior
     en la interfaz a los botones les asignamos esta funcion y así al tocar se idetifican con el id que le puse
@@ -141,6 +152,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
 /* En la función presionarsigno es parecido al precionarnum solo que con los signos y al clickar uno
 la variable tipode se asigne un valor para poder llamar asi a la operacion en el OnCreate, también se 
 le asiga un valor un valor a num1 transformando el texto anterior en un Double y borramos la pantalla 
