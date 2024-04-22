@@ -5,41 +5,43 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="304dp"
-        android:layout_height="56dp"
+    <ImageView
+        android:id="@+id/gatoboton"
+        android:layout_width="230dp"
+        android:layout_height="421dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
-
-    <Button
-        android:id="@+id/siguiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Siguiente"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gato2"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/texto"
+        android:id="@+id/texto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccione una imagen"
+        android:text="Hasme click"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.674" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

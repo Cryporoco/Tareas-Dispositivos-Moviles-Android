@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Imagen</string>
+    <string-array name="imagenes">
+        <item>Rana</item>
+        <item>Gato</item>
+        <item>Raton</item>
+
+    </string-array>
+
 </resources>
