@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Reproductor</string>
+    <string-array name="canciones">
+        <item>Rat River</item>
+        <item>Your Reality</item>
+        <item>Into the night</item>
+        <item>Invader</item>
+        <item>Open your heart</item>
+    </string-array>
 </resources>
