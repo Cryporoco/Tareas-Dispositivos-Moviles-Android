@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>?) {
 
             }
-            /* La segunda opcion preterminada para cuando se inicie el spinner no haya una opcion ya
+            /* La segunda opcion preter minada para cuando se inicie el spinner no haya una opcion ya
             seleccionada puede hacer un hint como -- o nada en este caso no lo use
             */
         }

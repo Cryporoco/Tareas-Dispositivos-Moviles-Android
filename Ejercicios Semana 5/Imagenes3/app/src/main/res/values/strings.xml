@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Imagenes3</string>
+
+    <string name="siguiente">Siguiente</string>
+    <string name="texto">Seleccione una imagen</string>
+    <string-array name="imagenes">
+        <item>Gato</item>
+        <item>Mapache</item>
+        <item>America</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click">Hasme click</string>
+    <string name="atras">Atrás</string>
 </resources>
