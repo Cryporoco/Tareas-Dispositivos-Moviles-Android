@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Reproductor 3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="texto">Reproductor de música</string>
+    <string-array name="canciones">
+        <item> Into the night </item>
+        <item> Invader </item>
+        <item> Open your Heart</item>
+        <item> Rat River</item>
+        <item> Your reality</item>
+    </string-array>
 </resources>
