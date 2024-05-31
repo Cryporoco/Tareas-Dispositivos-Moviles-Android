@@ -22,6 +22,7 @@
             android:id="@+id/icono"
             android:layout_width="118dp"
             android:layout_height="144dp"
+            android:src="@drawable/usuario"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.057"
@@ -33,6 +34,7 @@
             android:id="@+id/edad"
             android:layout_width="184dp"
             android:layout_height="27dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.8"
