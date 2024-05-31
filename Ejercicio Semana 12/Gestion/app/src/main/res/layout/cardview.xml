@@ -31,7 +31,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/edad"
+            android:id="@+id/txedad"
             android:layout_width="184dp"
             android:layout_height="27dp"
 
@@ -43,7 +43,7 @@
             app:layout_constraintVertical_bias="0.504" />
 
         <TextView
-            android:id="@+id/numero"
+            android:id="@+id/txnumero"
             android:layout_width="184dp"
             android:layout_height="27dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
             app:layout_constraintVertical_bias="0.863" />
 
         <TextView
-            android:id="@+id/nombre"
+            android:id="@+id/txnombre"
             android:layout_width="184dp"
             android:layout_height="27dp"
             app:layout_constraintBottom_toBottomOf="parent"
