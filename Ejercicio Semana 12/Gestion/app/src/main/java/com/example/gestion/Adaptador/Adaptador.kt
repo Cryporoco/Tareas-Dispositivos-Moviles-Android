@@ -8,7 +8,7 @@ import com.example.gestion.Usuarios
 
 class Adaptador (var item : List<Usuarios>): RecyclerView.Adapter<Holder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.cardview,parent)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.cardview,parent,false)
         return Holder(itemView)
     }
 
